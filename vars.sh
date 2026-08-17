@@ -4,7 +4,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 [[ -f "${SCRIPT_DIR}/vars.local.sh" ]] && source "${SCRIPT_DIR}/vars.local.sh"
 
 BINARY_DIR="${SCRIPT_DIR}/binary"
-S3_K3S_PREFIX="${S3_K3S_PREFIX:-database-backups/k3s}"
+S3_K3S_PREFIX="${S3_K3S_PREFIX:-}"
 
 # Keep binary, install script, and airgap tarball on the same k3s release.
 K3S_VERSION="v1.32.6+k3s1"
@@ -21,6 +21,6 @@ K3S_TOKEN="${K3S_TOKEN:-}"
 INSTALL_K3S_EXEC="${INSTALL_K3S_EXEC:---write-kubeconfig-mode 644}"
 K3S_TLS_SAN="${K3S_TLS_SAN:-}"
 
-S3_ENDPOINT="${S3_ENDPOINT:-https://s3.ir-thr-at1.arvanstorage.ir}"
+S3_ENDPOINT="${S3_ENDPOINT:-}"
 S3_ACCESS_KEY="${S3_ACCESS_KEY:-}"
 S3_SECRET_KEY="${S3_SECRET_KEY:-}"

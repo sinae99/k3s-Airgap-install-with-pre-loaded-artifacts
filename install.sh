@@ -1,6 +1,5 @@
 #!/bin/bash
 set -euo pipefail
-set -x
 
 cd "$(dirname "$0")"
 # shellcheck source=vars.sh

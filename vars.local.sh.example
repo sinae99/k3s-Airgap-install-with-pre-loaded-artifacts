@@ -1,5 +1,13 @@
 # Copy to vars.local.sh and fill in (vars.local.sh is gitignored).
+
+# Object storage source.
+S3_ENDPOINT="https://s3.example.com"
+S3_K3S_PREFIX="path/to/k3s-artifacts"
 S3_ACCESS_KEY="your-access-key"
 S3_SECRET_KEY="your-secret-key"
-# S3_ENDPOINT="https://s3.example.com"
-# K3S_VERSION="v1.33.3+k3s1"
+
+# Optional overrides.
+K3S_VERSION="v1.32.6+k3s1"
+K3S_URL="https://127.0.0.1:6443"
+K3S_TOKEN=""
+K3S_TLS_SAN=""

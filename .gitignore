@@ -1,3 +1,5 @@
 vars.local.sh
+archive/
+binary/k3s
 binary/k3s-airgap-images-*.tar.gz
 binary/k3s-airgap-images-*.tar.zst
